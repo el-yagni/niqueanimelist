@@ -5,8 +5,8 @@ import Naavbar from '@/components/Navbar'
 const gabarito = Gabarito({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'NiqueAnimeList',
-  description: 'Silahkan di kunjungi tonton animenya biar admin senang hehe🤣',
+  title: 'NiqueAnime',
+  description: 'Silahkan di kunjungi Bre',
 }
 
 export default function RootLayout({ children }) {
