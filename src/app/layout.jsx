@@ -6,7 +6,7 @@ const gabarito = Gabarito({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'NiqueAnimeList',
-  description: 'Get Watch ur Anime',
+  description: 'Silahkan di kunjungi tonton animenya biar admin senang hehe🤣',
 }
 
 export default function RootLayout({ children }) {
