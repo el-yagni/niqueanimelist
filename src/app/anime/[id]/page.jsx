@@ -6,6 +6,9 @@ import Link from "next/link"
 const Page = async ({ params: { id } }) => {
     const anime = await getAnimeResponse(`anime/${id}`)
 
+    console.log(anime.data)
+
+    
     return (
         <>
             <div className="pt-4 px-4">
@@ -30,8 +33,9 @@ const Page = async ({ params: { id } }) => {
                     <p className="text-color-accent">{anime.data.episodes}</p>
                 </div>
             </div>
+            
             <div className="pt-5 px-5 w-full">
-                <VideoPlayer youtubeId={anime.data.trailer.embed_url}/>
+                {anime.data.trailer.embed_url == null ? <h1 className="w-full h-60 flex items-center justify-center text-xl rounded-md bg-color-primary">Oopss..</h1> : <VideoPlayer youtubeId={anime.data.trailer.embed_url}/>}
             </div>
 
             <main className="pt-5 px-5 bg-color-secondary border-b p-5 flex h-15 items-center m-5 rounded-md">
